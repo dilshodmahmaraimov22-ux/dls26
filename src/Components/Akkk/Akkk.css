@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ASOSIY SAHIFA FOYI */
+.akk-page {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #e0f2fe 0%, #f8fafc 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* MARKAZIY BLOK */
+.akk-container {
+  max-width: 800px;
+  width: 100%;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 35px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0 12px 35px rgba(2, 132, 199, 0.08);
+}
+
+.akk-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0284c7;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* SLIDER RAMKASI (SWIPER) */
+.slider-wrapper {
+  width: 100%;
+  max-width: 650px;
+  border: 2px solid #cbd5e1;
+  border-radius: 18px;
+  padding: 8px;
+  background: #f8fafc;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.akk-swiper {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.slide-img-box {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.slide-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Rasmlar kesilib ketmasdan to'liq ko'rinadi */
+  border-radius: 10px;
+}
+
+/* SWIPER STIL O'ZGARISHLARI (OCHIQ TUSLAR) */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0284c7 !important;
+  background: rgba(255, 255, 255, 0.8);
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px !important;
+  font-weight: 800;
+}
+
+.swiper-pagination-bullet-active {
+  background: #0284c7 !important;
+}
+
+/* AKKAUNT TAFSILOTLARI BLOKI */
+.akk-details {
+  width: 100%;
+  max-width: 650px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.badge-tag {
+  align-self: flex-start;
+  background: #e0f2fe;
+  color: #0284c7;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.price-value {
+  color: #16a34a; /* Yashil narx */
+  background: #dcfce7;
+  padding: 2px 10px;
+  border-radius: 8px;
+}
+
+.info-list {
+  list-style: none;
+  font-size: 0.95rem;
+  color: #334155;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.guarantee-box {
+  margin-top: 10px;
+  padding: 12px;
+  background: #ffffff;
+  border-left: 4px solid #0284c7;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #334155;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.admin-contact {
+  color: #0284c7;
+}
+
+.warning {
+  color: #ef4444;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+/* TUGMA STILI */
+.akk-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 14px 42px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.3);
+  text-transform: uppercase;
+}
+
+.akk-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(2, 132, 199, 0.4);
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}
+
+/* MOBIL TELEFONLAR UCHUN MOSLASHUVCHANLIK */
+@media (max-width: 600px) {
+  .akk-container {
+    padding: 20px 15px;
+  }
+
+  .akk-title {
+    font-size: 1.5rem;
+  }
+
+  .slide-img-box {
+    height: 250px;
+  }
+
+  .akk-btn {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}
