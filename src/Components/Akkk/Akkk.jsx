@@ -1,14 +1,12 @@
 import React from 'react';
 import './Akkk.css';
 
-// Swiper komponentlari va uslublarini import qilish
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-// Rasmlar
 import asosiy1 from '../akkrasm/asosiy1.jpg';
 import asosiy2 from '../akkrasm/asosiy2.jpg';
 import asosiy3 from '../akkrasm/asosiy3.jpg';
@@ -34,7 +32,6 @@ const Akkk = () => {
       <div className="akk-container">
         <h1 className="akk-title">AKKAUNT SAVDOSI</h1>
 
-        {/* SWIPER SLIDER (Rasmlar galereyasi) */}
         <div className="slider-wrapper">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
@@ -55,7 +52,6 @@ const Akkk = () => {
           </Swiper>
         </div>
 
-        {/* AKKAUNT MA'LUMOTLARI KARTASI */}
         <div className="akk-details">
           <div className="badge-tag">DLS 2021 MAVSUMIDAN</div>
           
@@ -76,7 +72,6 @@ const Akkk = () => {
           </div>
         </div>
 
-        {/* TELEGRAM TUGMASI */}
         <Link 
           className="akk-btn" 
           to="https://t.me/dream0884" 

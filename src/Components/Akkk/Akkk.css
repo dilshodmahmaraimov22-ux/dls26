@@ -7,7 +7,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* ASOSIY SAHIFA FOYI */
 .akk-page {
   width: 100%;
   min-height: 100vh;
@@ -18,7 +17,6 @@
   padding: 40px 20px;
 }
 
-/* MARKAZIY BLOK */
 .akk-container {
   max-width: 800px;
   width: 100%;
@@ -41,7 +39,6 @@
   letter-spacing: 0.5px;
 }
 
-/* SLIDER RAMKASI (SWIPER) */
 .slider-wrapper {
   width: 100%;
   max-width: 650px;
@@ -70,11 +67,10 @@
 .slide-img-box img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Rasmlar kesilib ketmasdan to'liq ko'rinadi */
+  object-fit: contain;
   border-radius: 10px;
 }
 
-/* SWIPER STIL O'ZGARISHLARI (OCHIQ TUSLAR) */
 .swiper-button-next,
 .swiper-button-prev {
   color: #0284c7 !important;
@@ -95,7 +91,6 @@
   background: #0284c7 !important;
 }
 
-/* AKKAUNT TAFSILOTLARI BLOKI */
 .akk-details {
   width: 100%;
   max-width: 650px;
@@ -129,7 +124,7 @@
 }
 
 .price-value {
-  color: #16a34a; /* Yashil narx */
+  color: #16a34a;
   background: #dcfce7;
   padding: 2px 10px;
   border-radius: 8px;
@@ -167,7 +162,6 @@
   font-size: 0.85rem;
 }
 
-/* TUGMA STILI */
 .akk-btn {
   display: inline-flex;
   align-items: center;
@@ -194,7 +188,6 @@
   font-size: 1.2rem;
 }
 
-/* MOBIL TELEFONLAR UCHUN MOSLASHUVCHANLIK */
 @media (max-width: 600px) {
   .akk-container {
     padding: 20px 15px;
