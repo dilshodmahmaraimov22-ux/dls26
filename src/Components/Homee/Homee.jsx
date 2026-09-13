@@ -1,12 +1,12 @@
 import React from 'react';
 import './Homee.css';
-import english from '../images/english.jpg'
-import english from '../images/english.jpg'
+import english from '../images/english.jpg';
+import old from '../images/old.jpg';
 
 const Homee = () => {
   return (
     <div className="home-page">
-      {/* 1-PAGE: HERO SECTION */}
+      {/* HERO SECTION */}
       <section className="hero-section">
         <div className="container hero-container">
           <div className="hero-content">
@@ -19,82 +19,52 @@ const Homee = () => {
               va litsenziyalangan 4,000+ futbolchilar bilan haqiqiy futbol muhitini his eting!
             </p>
           </div>
-
-          <div className="hero-preview">
-            <div className="preview-card main-card">
-              <div className="card-badge">LIVE MATCH</div>
-              <div className="match-score">
-                <span>DLS FC</span>
-                <span className="score">3 - 1</span>
-                <span>RIVAL GS</span>
-              </div>
-              <p className="match-status">Division 1 • 88' Mins</p>
-            </div>
-          </div>
         </div>
       </section>
 
-      {/* 2-PAGE: YANGI KARTALAR BO'LIMI (CARDS SHOWCASE) */}
+      {/* YANGI KARTALAR BO'LIMI */}
       <section className="cards-section">
         <div className="container">
           <h2 className="section-title">
             YANGI <span>KARTALAR VA STATISTIKALAR</span>
           </h2>
           <p className="section-subtitle">
-            DLS 2026 yangilanishida taqdim etilgan o'yinchilarning yangi dizayndagi kartalari
+            DLS 2026 yangilanishida taqdim etilgan afsonaviy o'yinchilar hamda maxsus to'plamlar
           </p>
 
           <div className="cards-grid">
-            {/* Legendary Card */}
+            {/* England League Classics Card */}
             <div className="player-card legendary">
               <div className="card-top">
-                <span className="rating">85+</span>
-                <span className="position">FW</span>
+                <span className="rating">84 OVR</span>
+                <span className="position">ENGLAND CLASSICS</span>
               </div>
-              <div className="card-img-placeholder">
-                <img className='cards-img' src={english} alt="rasm" />
+              <div className="card-img-wrapper">
+                <img className="cards-img" src={english} alt="England League Classics" />
               </div>
               <div className="card-info">
-                <h3>LEGENDARY CARD</h3>
+                <h3>ENGLAND LEAGUE CLASSICS</h3>
                 <p className="card-desc">
-                  Oltin hoshiyali karta. Dunyoning eng top futbolchilari uchun mo'ljallangan, 
-                  yuqori tezlik va zarba kuchiga ega.
+                  Essien, Petit, Berbatov va Cole kabi Premier League afsonalari. 
+                  Dream Point Boosts (+50%, +75%, +150%) bilan jamoangiz reytingini oshiring.
                 </p>
               </div>
             </div>
 
-            {/* Secret Player Card */}
+            {/* Special Retro Cards */}
             <div className="player-card secret">
               <div className="card-top">
-                <span className="rating">???</span>
-                <span className="position">SHD</span>
+                <span className="rating">83 - 85 OVR</span>
+                <span className="position">SPECIAL CARDS</span>
               </div>
-              <div className="card-img-placeholder">
-                <img className='card-img' src={new} alt="" />
-              </div>
-              <div className="card-info">
-                <h3>SECRET PLAYER</h3>
-                <p className="card-desc">
-                  Transfer bozoridagi maxfiy o'yinchilar. Sotib olmaguningizcha 
-                  kimligi va aniq statistikasi oshkor etilmaydi.
-                </p>
-              </div>
-            </div>
-
-            {/* Form Boost / Breakthrough Card */}
-            <div className="player-card boosted">
-              <div className="card-top">
-                <span className="rating">+5 BOOST</span>
-                <span className="position">MID</span>
-              </div>
-              <div className="card-img-placeholder">
-                <p>O'yinchi Rasmi</p>
+              <div className="card-img-wrapper">
+                <img className="cards-img" src={old} alt="DLS Special Players" />
               </div>
               <div className="card-info">
-                <h3>BREAKTHROUGH CARD</h3>
+                <h3>RETRO & SPECIAL CARDS</h3>
                 <p className="card-desc">
-                  Maxsus mashg'ulotlar orqali formasi va maksimal imkoniyatlari (Breakthrough) 
-                  oshirilgan maxsus kartalar.
+                  De Gea (85), Dybala (85), Aubameyang (85), Isco (84), Insigne (84) va boshqa top 
+                  futbolchilarning eng pik mavsumlariga bag'ishlangan oltin hoshiyali kartalar.
                 </p>
               </div>
             </div>
@@ -102,7 +72,7 @@ const Homee = () => {
         </div>
       </section>
 
-      {/* 3-PAGE: GAMEPLAY IMKONIYATLARI */}
+      {/* GAMEPLAY IMKONIYATLARI */}
       <section className="gameplay-section">
         <div className="container">
           <h2 className="section-title">
