@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import dls from '../images/dls.png';
+import dls from '../Images/dls.png';
 import './header.css';
 
 const Header = () => {

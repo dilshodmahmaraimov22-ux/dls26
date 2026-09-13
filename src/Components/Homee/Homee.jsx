@@ -1,7 +1,7 @@
 import React from 'react';
 import './Homee.css';
-import english from '../images/english.jpg';
-import old from '../images/old.jpg';
+import english from '../Images/english.jpg';
+import old from '../Images/old.jpg';
 
 const Homee = () => {
   return (

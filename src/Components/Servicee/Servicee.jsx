@@ -1,6 +1,6 @@
 import React from 'react';
 import './Servicee.css';
-import tanga from '../images/tanga.jpg';
+import tanga from '../Images/tanga.jpg';
 import { Link } from 'react-router-dom';
 import { FaTelegramPlane } from 'react-icons/fa';
 
