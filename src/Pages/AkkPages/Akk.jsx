@@ -1,8 +1,11 @@
 import React from 'react'
+import Akkk from '../../Components/Akkk/Akkk'
 
 const Akk = () => {
   return (
-    <div></div>
+    <>
+    <Akkk/>
+    </>
   )
 }
 

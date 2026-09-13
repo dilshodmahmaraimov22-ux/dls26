@@ -2,6 +2,7 @@ import React from 'react';
 import './Servicee.css';
 import tanga from '../images/tanga.jpg';
 import { Link } from 'react-router-dom';
+import { FaTelegramPlane } from 'react-icons/fa';
 
 const Servicee = () => {
   return (
@@ -20,14 +21,25 @@ const Servicee = () => {
           Tezda bizning tanga va olmos xizmatimizdan foydalaning va akkauntingizni kuchaytiring.
         </p>
 
-        <Link 
-          className="service-btn" 
-          to="https://t.me/dream0884" 
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
-          Bizga bog'lanish
-        </Link>
+        <div className="service-btn-group">
+          <Link 
+            className="service-btn" 
+            to="https://t.me/dream0884" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <FaTelegramPlane className="btn-icon" /> Bizga bog'lanish
+          </Link>
+
+          <Link 
+            className="service-btn channel-btn" 
+            to="https://t.me/udaclanschannel" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <FaTelegramPlane className="btn-icon" /> Bizning kanal
+          </Link>
+        </div>
       </div>
     </section>
   );
