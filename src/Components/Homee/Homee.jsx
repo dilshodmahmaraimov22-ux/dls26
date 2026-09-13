@@ -6,7 +6,6 @@ import old from '../images/old.jpg';
 const Homee = () => {
   return (
     <div className="home-page">
-      {/* HERO SECTION */}
       <section className="hero-section">
         <div className="container hero-container">
           <div className="hero-content">
@@ -22,7 +21,6 @@ const Homee = () => {
         </div>
       </section>
 
-      {/* YANGI KARTALAR BO'LIMI */}
       <section className="cards-section">
         <div className="container">
           <h2 className="section-title">
@@ -33,7 +31,6 @@ const Homee = () => {
           </p>
 
           <div className="cards-grid">
-            {/* England League Classics Card */}
             <div className="player-card legendary">
               <div className="card-top">
                 <span className="rating">84 OVR</span>
@@ -51,7 +48,6 @@ const Homee = () => {
               </div>
             </div>
 
-            {/* Special Retro Cards */}
             <div className="player-card secret">
               <div className="card-top">
                 <span className="rating">83 - 85 OVR</span>
@@ -72,7 +68,6 @@ const Homee = () => {
         </div>
       </section>
 
-      {/* GAMEPLAY IMKONIYATLARI */}
       <section className="gameplay-section">
         <div className="container">
           <h2 className="section-title">

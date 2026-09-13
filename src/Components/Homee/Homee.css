@@ -7,7 +7,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* Light mode orqa fon */
 .home-page {
   background: #f8fafc;
   color: #0f172a;
@@ -19,7 +18,6 @@
   padding: 0 20px;
 }
 
-/* ================= HERO SECTION ================= */
 .hero-section {
   padding: 60px 0 30px;
   text-align: center;
@@ -57,7 +55,6 @@
   margin: 0 auto;
 }
 
-/* ================= CARDS SECTION ================= */
 .cards-section {
   padding: 70px 0;
   background: #ffffff;
@@ -83,7 +80,6 @@
   margin-bottom: 45px;
 }
 
-/* 2 ta karta uchun 2 ustunli kengaytirilgan setka */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -138,10 +134,9 @@
   font-weight: 700;
 }
 
-/* RASMLAR UCHUN KENGAYTIRILGAN IDISHLAR */
 .card-img-wrapper {
   width: 100%;
-  height: 380px; /* Rasm to'liq sig'ishi uchun balandlik kengaytirildi */
+  height: 380px;
   background: #ffffff;
   border-radius: 14px;
   display: flex;
@@ -156,7 +151,7 @@
 .cards-img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Rasm qirqilib ketmasdan to'liq sig'adi */
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -172,7 +167,6 @@
   line-height: 1.6;
 }
 
-/* ================= GAMEPLAY SECTION ================= */
 .gameplay-section {
   padding: 70px 0;
 }
@@ -209,7 +203,6 @@
   line-height: 1.6;
 }
 
-/* Responsivlik */
 @media (max-width: 992px) {
   .cards-grid,
   .gameplay-grid {
