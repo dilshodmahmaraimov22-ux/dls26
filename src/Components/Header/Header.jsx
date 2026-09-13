@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import dls from '../Images/dls.png';
-import './header.css';
+import './Header.css';
 
 const Header = () => {
   return (
