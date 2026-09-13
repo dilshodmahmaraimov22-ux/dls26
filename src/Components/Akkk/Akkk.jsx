@@ -7,16 +7,16 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import asosiy1 from '../akkrasm/asosiy1.jpg';
-import asosiy2 from '../akkrasm/asosiy2.jpg';
-import asosiy3 from '../akkrasm/asosiy3.jpg';
-import asosiy4 from '../akkrasm/asosiy4.jpg';
-import asosiy5 from '../akkrasm/asosiy5.jpg';
-import asosiy6 from '../akkrasm/asosiy6.jpg';
-import asosiy7 from '../akkrasm/asosiy7.jpg';
-import asosiy8 from '../akkrasm/asosiy8.jpg';
-import asosiy9 from '../akkrasm/asosiy9.jpg';
-import asosiy10 from '../akkrasm/asosiy10.jpg';
+import asosiy1 from '../Akkrasm/asosiy1.jpg';
+import asosiy2 from '../Akkrasm/asosiy2.jpg';
+import asosiy3 from '../Akkrasm/asosiy3.jpg';
+import asosiy4 from '../Akkrasm/asosiy4.jpg';
+import asosiy5 from '../Akkrasm/asosiy5.jpg';
+import asosiy6 from '../Akkrasm/asosiy6.jpg';
+import asosiy7 from '../Akkrasm/asosiy7.jpg';
+import asosiy8 from '../Akkrasm/asosiy8.jpg';
+import asosiy9 from '../Akkrasm/asosiy9.jpg';
+import asosiy10 from '../Akkrasm/asosiy10.jpg';
 
 import { Link } from 'react-router-dom';
 import { FaTelegramPlane } from "react-icons/fa";
