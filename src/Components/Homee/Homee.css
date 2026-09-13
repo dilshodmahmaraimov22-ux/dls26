@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-page {
+  background: #030712;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ================= HERO SECTION ================= */
+.hero-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+  background: radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.15) 0%, transparent 40%);
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(14, 165, 233, 0.1);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-title span {
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-desc {
+  color: #94a3b8;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.main-card {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 24px;
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+}
+
+.card-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ef4444;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 10px;
+}
+
+.match-score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.match-score .score {
+  font-size: 2.2rem;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+  padding: 5px 18px;
+  border-radius: 12px;
+}
+
+.match-status {
+  color: #22c55e;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* ================= 2-PAGE: CARDS SECTION ================= */
+.cards-section {
+  padding: 80px 0;
+  background: #0b1329;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.section-title span {
+  color: #38bdf8;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.player-card {
+  background: rgba(15, 23, 42, 0.8);
+  border-radius: 20px;
+  padding: 25px;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.player-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Legendary Card Glow */
+.player-card.legendary {
+  border-color: #eab308;
+  box-shadow: 0 10px 30px rgba(234, 179, 8, 0.2);
+}
+
+.player-card.legendary:hover {
+  box-shadow: 0 15px 40px rgba(234, 179, 8, 0.4);
+}
+
+/* Secret Card Glow */
+.player-card.secret {
+  border-color: #a855f7;
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.2);
+}
+
+.player-card.secret:hover {
+  box-shadow: 0 15px 40px rgba(168, 85, 247, 0.4);
+}
+
+/* Boosted Card Glow */
+.player-card.boosted {
+  border-color: #06b6d4;
+  box-shadow: 0 10px 30px rgba(6, 182, 212, 0.2);
+}
+
+.player-card.boosted:hover {
+  box-shadow: 0 15px 40px rgba(6, 182, 212, 0.4);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.rating {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.legendary .rating { color: #eab308; }
+.secret .rating { color: #a855f7; }
+.boosted .rating { color: #06b6d4; }
+
+.position {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.card-img-placeholder {
+  width: 100%;
+  height: 180px;
+  background: rgba(30, 41, 59, 0.6);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+.card-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.card-desc {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* ================= 3-PAGE: GAMEPLAY SECTION ================= */
+.gameplay-section {
+  padding: 80px 0;
+}
+
+.gameplay-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.gameplay-card {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.icon-box {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.gameplay-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.gameplay-card p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Responsivlik */
+@media (max-width: 992px) {
+  .hero-container,
+  .cards-grid,
+  .gameplay-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cards-img{
+    width: 300px;
+    height: 175px;
+    border-radius: 10px;
+}
