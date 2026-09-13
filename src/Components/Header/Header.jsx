@@ -1,24 +1,34 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import dls from '../images/dls.png';
-import { Link } from 'react-router-dom';
+import './header.css';
 
 const Header = () => {
   return (
-    <>
-    <div className='header'>
-        <div className='container'>
-            <div className='header__container'>
-                <img src={dls} alt="rasm" />
-                <ul className='header__list'>
-                    <li className='header__item'><Link to="/">Home</Link></li>
-                    <li className='header__item'><Link to="/service">Service</Link></li>
-                    <li className='header-item'><Link to="/akk">Akk</Link></li>
-                </ul>
-            </div>
+    <header className="header">
+      <div className="container">
+        <div className="header__container">
+          <NavLink to="/" className="header__logo-link">
+            <img className="header__img" src={dls} alt="Logo" />
+          </NavLink>
+          
+          <nav className="header__nav">
+            <ul className="header__list">
+              <li className="header__item">
+                <NavLink className="header__link" to="/">Home</NavLink>
+              </li>
+              <li className="header__item">
+                <NavLink className="header__link" to="/service">Service</NavLink>
+              </li>
+              <li className="header__item">
+                <NavLink className="header__link" to="/akk">Akk</NavLink>
+              </li>
+            </ul>
+          </nav>
         </div>
-    </div>
-    </>
-  )
-}
+      </div>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
