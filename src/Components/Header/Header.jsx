@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "./Images/dls.png"
+import dls from '../images/dls.png';
 
 const Header = () => {
   return (
@@ -7,7 +7,8 @@ const Header = () => {
     <div className='header'>
         <div className='container'>
             <div className='header__container'>
-                <img src={logo} alt="" />
+                <img src={dls} alt="rasm" />
+                <ul className=''></ul>
             </div>
         </div>
     </div>
