@@ -7,7 +7,6 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container footer-container">
-        {/* 1. Brend va Loyiha haqida xulosa */}
         <div className="footer-brand">
           <h2 className="footer-logo">DLS <span>2026</span></h2>
           <p className="footer-desc">
@@ -24,7 +23,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* 2. Tezkor Navigatsiya (Bo'limlar) */}
         <div className="footer-links">
           <h3 className="footer-title">Bo'limlar</h3>
           <ul>
@@ -34,7 +32,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* 3. Xizmatlarimiz va Kafolatlar */}
         <div className="footer-features">
           <h3 className="footer-title">Xizmatlarimiz</h3>
           <ul>
@@ -45,7 +42,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Mualliflik huquqi */}
       <div className="footer-bottom">
         <p>© 2026 DLS FC Fan Platformasi. Barcha huquqlar hamjamiyat tomonidan himoyalangan.</p>
       </div>

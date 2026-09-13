@@ -15,7 +15,6 @@
   padding-bottom: 40px;
 }
 
-/* BRAND STILI */
 .footer-logo {
   font-size: 1.8rem;
   font-weight: 800;
@@ -65,7 +64,6 @@
   box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
 }
 
-/* SARLAVHALAR VA LISTLAR */
 .footer-title {
   font-size: 1.1rem;
   font-weight: 700;
@@ -109,7 +107,6 @@
   flex-shrink: 0;
 }
 
-/* FOOTER BOTTOM */
 .footer-bottom {
   border-top: 1px solid #f1f5f9;
   padding: 20px 0;
@@ -122,7 +119,6 @@
   color: #94a3b8;
 }
 
-/* MOBIL RESPONSIVLIK */
 @media (max-width: 850px) {
   .footer-container {
     grid-template-columns: 1fr;
